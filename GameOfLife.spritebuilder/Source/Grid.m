@@ -165,11 +165,13 @@ static const int GRID_COLUMNS = 10;
             else if(cre.livingNeighbors <= 1 || cre.livingNeighbors >= 4)
             {
                 cre.isAlive = false;
-                if(numAlive > 0)
-                {
-                    numAlive--;
-                }
             }
+            
+            if(cre.isAlive)
+            {
+                numAlive++;
+            }
+            
         }
     }
     _totalAlive = numAlive;
