@@ -160,7 +160,7 @@ static const int GRID_COLUMNS = 10;
             if(cre.livingNeighbors == 3)
             {
                 cre.isAlive = true;
-                numAlive++;
+                numAlive = numAlive + 1;
             }
             else if(cre.livingNeighbors <= 1 || cre.livingNeighbors >= 4)
             {
