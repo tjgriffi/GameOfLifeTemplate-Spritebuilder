@@ -159,7 +159,8 @@ static const int GRID_COLUMNS = 10;
             {
                 cre.isAlive = true;
             }
-            else{
+            else if(cre.livingNeighbors <= 1 || cre.livingNeighbors >= 4)
+            {
                 cre.isAlive = false;
             }
         }
