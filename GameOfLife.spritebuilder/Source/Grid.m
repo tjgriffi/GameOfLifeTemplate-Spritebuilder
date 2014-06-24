@@ -154,14 +154,14 @@ static const int GRID_COLUMNS = 10;
     {
         for(int c = 0; c < [_gridArray[r] count]; c++)
         {
-           // Creature *cre = _gridArray[r][c];
-            //if(cre.livingNeighbors == 3)
-            //{
-              //  cre.isAlive = true;
-            //}
-            //else{
-             //   cre.isAlive = false;
-            //}
+            Creature *cre = _gridArray[r][c];
+            if(cre.livingNeighbors == 3)
+            {
+                cre.isAlive = true;
+            }
+            else{
+                cre.isAlive = false;
+            }
         }
     }
 }
